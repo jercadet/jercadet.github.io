@@ -1,11 +1,9 @@
-import React from 'react';
-import logo from './logo.svg';
 import './styles/App.css';
 import Header from './components/NavBar';
-import { BrowserRouter, Route, Router, Routes } from 'react-router-dom';
-import AboutPage from './about';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './Home';
-import NotFoundPage from './NotFound';
+import Contact from './contact';
+import ExpPage from './expPage';
 
 function App() {
   return (
@@ -14,8 +12,8 @@ function App() {
           <Header />
           <Routes>
             <Route path='/' element={<Home />} />
-            <Route path='/about' element={<AboutPage />} />
-            <Route path='*' element={<NotFoundPage />} />
+            <Route path='/experience' element={<ExpPage />} />
+            <Route path='/contact' element={<Contact />} />
           </Routes>
         </BrowserRouter>
     </div>

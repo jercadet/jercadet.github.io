@@ -23,7 +23,7 @@ export default function NavBar() {
       </div>
       <div className="links">
         <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
+        <Link to="/experience">Experience</Link>
         <Link to="/contact">Contact</Link>
         <Link to="*"></Link>
       </div>

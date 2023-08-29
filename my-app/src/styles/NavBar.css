@@ -1,8 +1,8 @@
 /* Code taken from machadop1407 on Github */
   .navbar {
     width: 100%;
-    height: 100px;
-    background: #3B5C6F;
+    height: 70px;
+    /* background: rgb(154, 173, 191); */
   }
   
   .links {
