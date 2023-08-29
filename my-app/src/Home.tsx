@@ -2,7 +2,7 @@ import jerSelfie from './images/jerFranceCausal.jpg';
 
 export default function Home() {
   return (
-    <div>
+    <div className='space-y-4'>
       <div className='sm:flex mx-6 text-left'>
         <div>
           <h1 className='text-slate-300 sm:text-7xl text-4xl'>My name is Jeremiah Cadet</h1>

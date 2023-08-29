@@ -13,7 +13,7 @@ export default function NavBar() {
   }, [location])
 
   return (
-    <div className="navbar" id={expandNavBar ? "open" : "close"}>
+    <div className="navbar border-b-2 border-slate-700 rounded-sm" id={expandNavBar ? "open" : "close"}>
       <div className="toggleButton">
         <button 
           onClick={() => {
