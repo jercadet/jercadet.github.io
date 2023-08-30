@@ -1,5 +1,5 @@
 import Layout from './components/Layout';
-import jerSelfie from './images/jerFranceCausal.jpg';
+import jerSelfie from './media/images/jerFranceCausal.jpg';
 
 export default function Home() {
   return (
