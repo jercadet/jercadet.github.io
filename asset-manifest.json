@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Personal-Website/static/css/main.4e0203dc.css",
-    "main.js": "/Personal-Website/static/js/main.b1f593fc.js",
-    "static/js/787.5809834d.chunk.js": "/Personal-Website/static/js/787.5809834d.chunk.js",
-    "static/media/jerFranceCausal.jpg": "/Personal-Website/static/media/jerFranceCausal.7a4b3f9f23ec219ad25c.jpg",
-    "index.html": "/Personal-Website/index.html",
-    "main.4e0203dc.css.map": "/Personal-Website/static/css/main.4e0203dc.css.map",
-    "main.b1f593fc.js.map": "/Personal-Website/static/js/main.b1f593fc.js.map",
-    "787.5809834d.chunk.js.map": "/Personal-Website/static/js/787.5809834d.chunk.js.map"
+    "main.css": "/static/css/main.4e0203dc.css",
+    "main.js": "/static/js/main.3bfcd445.js",
+    "static/js/787.5809834d.chunk.js": "/static/js/787.5809834d.chunk.js",
+    "static/media/jerFranceCausal.jpg": "/static/media/jerFranceCausal.7a4b3f9f23ec219ad25c.jpg",
+    "index.html": "/index.html",
+    "main.4e0203dc.css.map": "/static/css/main.4e0203dc.css.map",
+    "main.3bfcd445.js.map": "/static/js/main.3bfcd445.js.map",
+    "787.5809834d.chunk.js.map": "/static/js/787.5809834d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4e0203dc.css",
-    "static/js/main.b1f593fc.js"
+    "static/js/main.3bfcd445.js"
   ]
 }
