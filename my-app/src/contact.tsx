@@ -13,7 +13,7 @@ export default function Contact() {
         <h1 className="text-4xl">Contact Me!</h1>
         <h2 className="text-2xl">Feel free to connect with me!</h2>
         <div className="flex space-x-64 justify-center">
-          <EmailIcon sx={{ color: "white", fontSize: iconSize }} />
+          <EmailIcon sx={{ color: "white", fontSize: iconSize }} /> 
           <IconButton target="_blank" rel="noopener noreferrer" href="https://github.com/jercadet"><GitHubIcon sx={{ color: "white", fontSize: iconSize }} /></IconButton>
           <IconButton target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/cadetj"><LinkedInIcon sx={{ color: "white", fontSize: iconSize }} /></IconButton>
         </div>
