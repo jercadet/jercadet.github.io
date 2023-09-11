@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.4e0203dc.css",
-    "main.js": "/static/js/main.2e0a60dd.js",
-    "static/js/787.50e3dfbd.chunk.js": "/static/js/787.50e3dfbd.chunk.js",
-    "static/media/jerFranceCausal.jpg": "/static/media/jerFranceCausal.7a4b3f9f23ec219ad25c.jpg",
-    "index.html": "/index.html",
-    "main.4e0203dc.css.map": "/static/css/main.4e0203dc.css.map",
-    "main.2e0a60dd.js.map": "/static/js/main.2e0a60dd.js.map",
-    "787.50e3dfbd.chunk.js.map": "/static/js/787.50e3dfbd.chunk.js.map"
+    "main.css": "/jercadet.github.io/static/css/main.4e0203dc.css",
+    "main.js": "/jercadet.github.io/static/js/main.b4b00546.js",
+    "static/js/787.d545a3ea.chunk.js": "/jercadet.github.io/static/js/787.d545a3ea.chunk.js",
+    "static/media/jerFranceCausal.jpg": "/jercadet.github.io/static/media/jerFranceCausal.7a4b3f9f23ec219ad25c.jpg",
+    "index.html": "/jercadet.github.io/index.html",
+    "main.4e0203dc.css.map": "/jercadet.github.io/static/css/main.4e0203dc.css.map",
+    "main.b4b00546.js.map": "/jercadet.github.io/static/js/main.b4b00546.js.map",
+    "787.d545a3ea.chunk.js.map": "/jercadet.github.io/static/js/787.d545a3ea.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4e0203dc.css",
-    "static/js/main.2e0a60dd.js"
+    "static/js/main.b4b00546.js"
   ]
 }
