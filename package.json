@@ -1,6 +1,6 @@
 {
-  "name": "jcadet-website",
-  "homepage": "https://jercadet.github.io/",
+  "name": "personal-website",
+  "homepage": "https://jercadet.github.io/Personal-Website",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
