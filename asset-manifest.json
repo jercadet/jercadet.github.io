@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4e0203dc.css",
+    "main.js": "/static/js/main.2e0a60dd.js",
+    "static/js/787.50e3dfbd.chunk.js": "/static/js/787.50e3dfbd.chunk.js",
+    "static/media/jerFranceCausal.jpg": "/static/media/jerFranceCausal.7a4b3f9f23ec219ad25c.jpg",
+    "index.html": "/index.html",
+    "main.4e0203dc.css.map": "/static/css/main.4e0203dc.css.map",
+    "main.2e0a60dd.js.map": "/static/js/main.2e0a60dd.js.map",
+    "787.50e3dfbd.chunk.js.map": "/static/js/787.50e3dfbd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4e0203dc.css",
+    "static/js/main.2e0a60dd.js"
+  ]
+}
