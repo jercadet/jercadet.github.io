@@ -1,6 +1,6 @@
 {
-  "name": "jcadet-react-typescript-website",
-  "homepage": "https://jercadet.github.io",
+  "name": "jcadet-website",
+  "homepage": "https://jercadet.github.io/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
