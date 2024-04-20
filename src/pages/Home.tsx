@@ -1,11 +1,11 @@
-import Layout from "./components/Layout";
-import jerPic from "./media/images/jer_headshot.jpg";
+import React from "react";
+import jerPic from "../media/images/jer_headshot.jpg";
 
 export default function Home() {
   return (
-    <Layout>
+    <div className="flex justify-between">
       <div className="space-y-4">
-        <div className="sm:flex text-left">
+        <div className="flex sm:flex text-left">
           <div>
             <h1 className="text-slate-300 sm:text-7xl text-4xl">
               My name is Jeremiah Cadet
@@ -39,6 +39,12 @@ export default function Home() {
           .
         </p>
       </div>
-    </Layout>
+      <img
+        alt="A professional headshot of Jeremiah Cadet"
+        width="250"
+        height="300"
+        src={jerPic}
+      />
+    </div>
   );
 }

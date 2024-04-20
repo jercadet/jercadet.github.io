@@ -1,21 +1,26 @@
-import './styles/App.css';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Home from './Home';
-import Contact from './Contact';
-import ExpPage from './Experience';
-import NotFound from './NotFound';
+import "./styles/App.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import Contact from "./pages/Contact";
+import ExpPage from "./pages/Experience";
+import NotFound from "./NotFound";
+import Layout from "./components/Layout";
+import Projects from "./pages/Projects";
 
 function App() {
   return (
     <div className="App">
+      <Layout>
         <BrowserRouter>
           <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/experience' element={<ExpPage />} />
-            <Route path='/contact' element={<Contact />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/experience" element={<ExpPage />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/projects" element={<Projects />} />
             <Route path="*" Component={NotFound} />
           </Routes>
         </BrowserRouter>
+      </Layout>
     </div>
   );
 }

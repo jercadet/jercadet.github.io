@@ -1,7 +1,4 @@
-// import { useLocation } from "react-router-dom";
 import "../styles/Header.css";
-// import { useEffect, useState } from "react";
-// import { ReorderTwoTone } from "@mui/icons-material";
 
 export default function Header() {
 
@@ -16,7 +13,10 @@ export default function Header() {
             <a href="/experience">Experience</a>
           </li>
           <li>
-            <a href="/contact">Contact Me</a>
+            <a href="/projects">Projects</a>
+          </li>
+          <li>
+            <a href="/contact">Contact</a>
           </li>
         </ul>
       </nav> 
