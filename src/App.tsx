@@ -13,9 +13,9 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/experience" element={<ExpPage />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="*" Component={NotFound} />
+            <Route path="/experience/*" element={<ExpPage />} />
+            <Route path="/contact/*" element={<Contact />} />
+            {/* <Route path="*" Component={NotFound} /> */}
           </Routes>
         </BrowserRouter>
       </Layout>

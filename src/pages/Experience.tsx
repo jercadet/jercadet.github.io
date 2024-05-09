@@ -1,5 +1,4 @@
 import { Button } from "@mui/material";
-import resumePdf from "../media/documents/JeremiahCadet_resume.pdf";
 
 export default function ExpPage() {
   const hOneStyle = "text-6xl text-left text-slate-300 mb-4";
@@ -9,14 +8,6 @@ export default function ExpPage() {
     <div className="space-y-6 text-left text-lg">
       <div className="flex justify-between">
         <h1 className={hOneStyle}>Co-ops at Northeastern</h1>
-        <Button
-          size="small"
-          variant="contained"
-          className="mr-4"
-          onClick={() => window.open(resumePdf)}
-        >
-          View My Resumé
-        </Button>
       </div>
       <div>
         <h2 className={hTwoStyle}>Optum</h2>
