@@ -1,5 +1,5 @@
-import Footer from "./feet";
-import Header from "./heed";
+import Footer from "./footer";
+import Header from "./header";
 
 
 interface Props {
