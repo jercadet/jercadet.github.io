@@ -5,7 +5,6 @@ import Contact from "./pages/Contact";
 import ExpPage from "./pages/Experience";
 import NotFound from "./NotFound";
 import Layout from "./components/Layout";
-import Projects from "./pages/Projects";
 
 function App() {
   return (
@@ -16,7 +15,6 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/experience" element={<ExpPage />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/projects" element={<Projects />} />
             <Route path="*" Component={NotFound} />
           </Routes>
         </BrowserRouter>
