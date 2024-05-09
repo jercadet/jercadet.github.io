@@ -2,9 +2,9 @@ import "./styles/App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
-import ExpPage from "./pages/Experience";
+import Experience from "./pages/Experience";
 import NotFound from "./NotFound";
-import Layout from "./components/Layout";
+import Layout from "./Components/Layout";
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/experience/*" element={<ExpPage />} />
+            <Route path="/experience/*" element={<Experience />} />
             <Route path="/contact/*" element={<Contact />} />
             {/* <Route path="*" Component={NotFound} /> */}
           </Routes>

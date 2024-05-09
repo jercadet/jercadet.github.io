@@ -1,5 +1,5 @@
 import React from "react";
-import jerPic from "../media/images/jer_headshot.jpg";
+import jerPic from "../../media/images/jer_headshot.jpg";
 
 export default function Home() {
   return (
@@ -11,10 +11,10 @@ export default function Home() {
               My name is Jeremiah Cadet
             </h1>
             <h2 className="text-slate-400 sm:text-4xl text-2xl">
-              Northeastern University student, aspiring Software Developer
+              Northeastern University New Graduate, aspiring Software Developer
             </h2>
             <h2 className="text-slate-400 sm:text-4xl text-2xl">
-              Graduating May 2024
+              Graduated May 2024
             </h2>
           </div>
         </div>

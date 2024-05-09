@@ -1,16 +1,16 @@
 import { Button } from "@mui/material";
 
-export default function ExpPage() {
-  const hOneStyle = "text-6xl text-left text-slate-300 mb-4";
-  const hTwoStyle = "text-5xl text-left text-slate-400 mb-2";
+export default function Experience() {
+  const titleStyle = "text-6xl text-left text-slate-300 mb-4";
+  const expNameStyle = "text-5xl text-left text-slate-400 mb-2";
 
   return (
     <div className="space-y-6 text-left text-lg">
       <div className="flex justify-between">
-        <h1 className={hOneStyle}>Co-ops at Northeastern</h1>
+        <h1 className={titleStyle}>Co-ops at Northeastern</h1>
       </div>
       <div>
-        <h2 className={hTwoStyle}>Optum</h2>
+        <h2 className={expNameStyle}>Optum</h2>
         <p>
           My co-op at Optum was my first role within Computer Science. Optum is
           a company under United Health Group, a very big company.
@@ -33,7 +33,7 @@ export default function ExpPage() {
         </p>
       </div>
       <div>
-        <h2 className={hTwoStyle}>Hydrow</h2>
+        <h2 className={expNameStyle}>Hydrow</h2>
         <p className="pb-8">
           Hydrow was a big change for me from my previous co-op. Optum was an
           extremely big company. Hydrow was much smaller, having about 100
@@ -54,9 +54,9 @@ export default function ExpPage() {
           development, and general company culture.
         </p>
       </div>
-      <h1 className={hOneStyle}>Other Experiences</h1>
+      <h1 className={titleStyle}>Other Experiences</h1>
       <div>
-        <h2 className={hTwoStyle}>Resident Assistant (RA)</h2>
+        <h2 className={expNameStyle}>Resident Assistant (RA)</h2>
         <p>
           As a resident assistant, I had many responsibilities. The main
           responisibility was ensuring the safety of residents. I also created
