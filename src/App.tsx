@@ -3,7 +3,6 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import Experience from "./pages/Experience";
-import NotFound from "./NotFound";
 import Layout from "./Components/Layout";
 
 function App() {

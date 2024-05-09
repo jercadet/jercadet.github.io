@@ -1,5 +1,3 @@
-import { Button } from "@mui/material";
-
 export default function Experience() {
   const titleStyle = "text-6xl text-left text-slate-300 mb-4";
   const expNameStyle = "text-5xl text-left text-slate-400 mb-2";
