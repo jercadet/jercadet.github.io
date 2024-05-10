@@ -9,6 +9,7 @@ module.exports = {
         'air-superiority-blue': '#6D98BA',
         'rose-taupe': '#A26769',
         'old-rose': '#B97375',
+        'slate-bg': '#202124'
       },
       fontFamily: {
         'custom': ['Prompt', 'Oxygen', 'Ubuntu'], 

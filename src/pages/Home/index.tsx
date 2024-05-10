@@ -2,10 +2,24 @@ import React from "react";
 import jerPic from "../../media/images/jer_headshot.jpg";
 
 export default function Home() {
+  document.title = "Home";
+
+  const picSize = 800;
+  const jerImg = (
+    <img
+      alt="A professional headshot of Jeremiah Cadet"
+      width={picSize}
+      height={picSize}
+      src={jerPic}
+      className="rounded-full object-contain"
+    />
+  );
+
   return (
-    <div className="flex justify-between">
-      <div className="space-y-4">
-        <div className="flex sm:flex text-left">
+    <div className="md:flex sm:justify-between">
+      <div className="md:hidden mb-8">{jerImg}</div>
+      <div className="mb-2 space-y-4">
+        <div className="flex text-left">
           <div>
             <h1 className="text-slate-300 sm:text-7xl text-4xl">
               My name is Jeremiah Cadet
@@ -39,12 +53,9 @@ export default function Home() {
           .
         </p>
       </div>
-      <img
-        alt="A professional headshot of Jeremiah Cadet"
-        width="250"
-        height="300"
-        src={jerPic}
-      />
+      <div className="hidden md:inline-block">
+        {jerImg}
+      </div>
     </div>
   );
 }
