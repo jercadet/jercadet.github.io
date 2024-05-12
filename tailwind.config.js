@@ -4,17 +4,18 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'cadet-gray': '#9AADBF',
-        'charcoal': '#344055',
-        'air-superiority-blue': '#6D98BA',
-        'rose-taupe': '#A26769',
-        'old-rose': '#B97375',
+        "cadet-gray": "#9AADBF",
+        charcoal: "#344055",
+        "air-superiority-blue": "#6D98BA",
+        "rose-taupe": "#A26769",
+        "old-rose": "#B97375",
+        soot: "#202124",
+        whitesmoke: "#f5f5f5",
       },
       fontFamily: {
-        'custom': ['Prompt', 'Oxygen', 'Ubuntu'], 
-      }
+        custom: ["Prompt", "Oxygen", "Ubuntu"],
+      },
     },
   },
   plugins: [],
-}
-
+};
