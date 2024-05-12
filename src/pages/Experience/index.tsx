@@ -5,8 +5,8 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary";
 
 export default function Experience() {
-  const titleStyle = "text-5xl text-left text-slate-300 mb-4";
-  const expNameStyle = "text-4xl text-left text-slate-400 mb-2";
+  const titleStyle = "sm:text-5xl text-4xl text-left text-slate-300 mb-4";
+  const expNameStyle = "sm:text-4xl text-3xl text-left text-slate-400 mb-2";
   const text_slate_300 = "rgba(203, 213, 225, 0.2);";
   const text_slate_400 = "rgb(148 163 184)";
   document.title = "Experience";
@@ -38,7 +38,7 @@ export default function Experience() {
             id="panel1-header"
           >
             <h2 className={`${expNameStyle} md:block pr-3`}>Optum </h2>
-            <h2 className={`${expNameStyle} italic hidden md:block`}>
+            <h2 className={`${expNameStyle} italic hidden lg:block`}>
               {" "}
               - Technology Development Intern
             </h2>
@@ -85,7 +85,7 @@ export default function Experience() {
             id="panel2-header"
           >
             <h2 className={`${expNameStyle} md:block pr-3`}>Hydrow</h2>
-            <h2 className={`${expNameStyle} italic hidden md:block`}>
+            <h2 className={`${expNameStyle} italic hidden lg:block`}>
               - Software Engineer Co-op
             </h2>
           </AccordionSummary>

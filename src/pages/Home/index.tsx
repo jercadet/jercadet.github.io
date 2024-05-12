@@ -22,7 +22,7 @@ export default function Home() {
         <div className="flex text-left">
           <div>
             <h1 className="text-slate-300 sm:text-7xl text-4xl">
-              My name is Jeremiah Cadet
+              Jeremiah Cadet
             </h1>
             <h2 className="text-slate-400 sm:text-4xl text-2xl">
               Northeastern University New Graduate, aspiring Software Developer
