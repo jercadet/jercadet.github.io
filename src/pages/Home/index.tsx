@@ -1,8 +1,9 @@
 import React from "react";
 import jerPic from "../../media/images/jer_headshot.jpg";
+import { setDocTitle } from "../../utils/functions";
 
 export default function Home() {
-  document.title = "Home";
+  document.title = setDocTitle("Home").fullTitle;
 
   const picSize = 800;
   const jerImg = (

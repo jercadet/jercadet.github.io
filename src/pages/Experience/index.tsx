@@ -3,13 +3,14 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Accordion from "@mui/material/Accordion";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary";
+import { setDocTitle } from "../../utils/functions";
 
 export default function Experience() {
   const titleStyle = "sm:text-5xl text-4xl text-left text-slate-300 mb-4";
   const expNameStyle = "sm:text-4xl text-3xl text-left text-slate-400 mb-2";
   const text_slate_300 = "rgba(203, 213, 225, 0.2);";
   const text_slate_400 = "rgb(148 163 184)";
-  document.title = "Experience";
+  document.title = setDocTitle("Experience").fullTitle;
 
   const [expanded, setExpanded] = React.useState<String>("");
 

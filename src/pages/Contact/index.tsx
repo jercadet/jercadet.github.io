@@ -4,6 +4,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { IconButton, Snackbar } from "@mui/material";
 import { Fragment, useState } from "react";
 import CloseIcon from "@mui/icons-material/Close";
+import { setDocTitle } from "../../utils/functions";
 
 // link to Material UI Snackbar doc:
 // https://mui.com/material-ui/react-snackbar/
@@ -11,7 +12,7 @@ import CloseIcon from "@mui/icons-material/Close";
 export default function Contact() {
   const iconSize = 60;
   const email = "cadet.jer01@gmail.com";
-  document.title = "Contact";
+  document.title = setDocTitle("Contact").fullTitle;
   const [sbOpen, setSbOpen] = useState(false);
   const [clipboardStatus, setClipboardStatus] = useState("");
 
