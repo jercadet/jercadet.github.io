@@ -2,17 +2,18 @@ import { Button, Drawer } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import DensityMediumIcon from "@mui/icons-material/DensityMedium";
 import NavPages from "./navPages";
+import { getDocTitle } from "../../utils/functions";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
-  const [pageTitle, setPageTitle] = useState(document.title);
+  const [pageTitle, setPageTitle] = useState(getDocTitle());
 
   const toggleDrawer = (newOpen: boolean) => () => {
     setOpen(newOpen);
   };
 
   useEffect(() => {
-    setPageTitle(document.title);
+    setPageTitle(getDocTitle());
   }, []);
 
   return (

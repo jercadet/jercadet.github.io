@@ -1,5 +1,6 @@
 import { List, ListItem } from "@mui/material";
 import React, { useEffect, useState } from "react";
+import { getDocTitle } from "../../utils/functions";
 
 type pageType = {
   link: string;
@@ -12,10 +13,10 @@ export default function NavPages({ alignment }: any) {
     { link: "/experience", title: "Experience" },
     { link: "/contact", title: "Contact" },
   ];
-  const [active, setActive] = useState(document.title);
+  const [active, setActive] = useState(getDocTitle());
 
   useEffect(() => {
-    setActive(document.title);
+    setActive(getDocTitle());
   }, []);
 
   return (
