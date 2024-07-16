@@ -34,18 +34,13 @@ export default function Home() {
           </div>
         </div>
         <p className="text-left text-lg">
-          I began studying at Northeastern University in 2020. My first year of
-          school was completely online due to Covid, so my second year felt like
-          my first year. I studied Computer Science with a concentration in
-          Human-Centered Computing. During college, I completed two co-ops.
-          Co-ops are essentially internships while I'm in college. My first
-          internship was at{" "}
+          I began studying at Northeastern University in 2020. I graduded in May 2024 with a Bachelor's degree in Computer Science with a concentration in Human-Centered Computing. During college, I completed two co-ops. My first co-op was at{" "}
           {
             <a className="text-teal-200 hover:text-teal-600" href="/experience">
               Optum
             </a>
           }
-          , and my second internship was at{" "}
+          , and my second co-op was at{" "}
           {
             <a className="text-teal-200 hover:text-teal-600" href="/experience">
               Hydrow
