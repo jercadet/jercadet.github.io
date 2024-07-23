@@ -2,10 +2,19 @@ import React from "react";
 import jerPic from "../../media/images/jer_headshot.jpg";
 import { useDispatch } from "react-redux";
 import { setActivePage } from "../reducer";
+import { setActiveItem } from "../Experience/reducer";
+import { Link } from "react-router-dom";
 
 export default function Home() {
+  const linkStyle = "text-teal-200 hover:text-teal-600";
+
   const dispatch = useDispatch();
   dispatch(setActivePage("Home"));
+
+  // Handles click on company name links so that appropriate accordion expands
+  const handleClick = (panel: string) => {
+    dispatch(setActiveItem(panel));
+  };
 
   const picSize = 800;
   const jerImg = (
@@ -43,15 +52,23 @@ export default function Home() {
           Co-ops are essentially internships while I'm in college. My first
           internship was at{" "}
           {
-            <a className="text-teal-200 hover:text-teal-600" href="/experience">
+            <Link
+              to="/experience"
+              className={linkStyle}
+              onClick={() => handleClick("optum")}
+            >
               Optum
-            </a>
+            </Link>
           }
           , and my second internship was at{" "}
           {
-            <a className="text-teal-200 hover:text-teal-600" href="/experience">
+            <Link
+              to="/experience"
+              className={linkStyle}
+              onClick={() => handleClick("hydrow")}
+            >
               Hydrow
-            </a>
+            </Link>
           }
           .
         </p>

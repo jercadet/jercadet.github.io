@@ -3,13 +3,13 @@ import React, { useState } from "react";
 import DensityMediumIcon from "@mui/icons-material/DensityMedium";
 import NavPages from "./navPages";
 import { useSelector } from "react-redux";
-import { PageState } from "../../store";
+import { JcadetState } from "../../store";
 
 // Main file of the header (banner with the links to the other pages on the top of each page)
 export default function Header() {
   const [open, setOpen] = useState(false);
 
-  const pageTitle = useSelector((state: PageState) => state.pageReducer.title);
+  const pageTitle = useSelector((state: JcadetState) => state.pageReducer.title);
 
   const toggleDrawer = (newOpen: boolean) => () => {
     setOpen(newOpen);

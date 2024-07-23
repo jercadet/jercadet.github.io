@@ -2,7 +2,7 @@ import { List, ListItem } from "@mui/material";
 import React from "react";
 import { sitePages } from "../../Database";
 import { useSelector } from "react-redux";
-import { PageState } from "../../store";
+import { JcadetState } from "../../store";
 
 // Type for page containing the link and title of the page
 type pageType = {
@@ -16,7 +16,7 @@ export default function NavPages({ alignment }: any) {
   const pages: pageType[] = sitePages;
 
   const active = useSelector(
-    (state: PageState) => state.pageReducer.title
+    (state: JcadetState) => state.pageReducer.title
   );
 
   return (
