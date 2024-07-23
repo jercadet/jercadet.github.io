@@ -1,9 +1,11 @@
 import React from "react";
 import jerPic from "../../media/images/jer_headshot.jpg";
-import { setDocTitle } from "../../utils/functions";
+import { useDispatch } from "react-redux";
+import { setActivePage } from "../reducer";
 
 export default function Home() {
-  document.title = setDocTitle("Home").fullTitle;
+  const dispatch = useDispatch();
+  dispatch(setActivePage("Home"));
 
   const picSize = 800;
   const jerImg = (
@@ -21,15 +23,15 @@ export default function Home() {
       <div className="md:hidden mb-8">{jerImg}</div>
       <div className="mb-2 space-y-4">
         <div className="flex text-left">
-          <div>
+          <div className="space-y-4">
             <h1 className="text-slate-300 sm:text-7xl text-4xl">
               Jeremiah Cadet
             </h1>
             <h2 className="text-slate-400 sm:text-4xl text-2xl">
-              Northeastern University New Graduate, aspiring Software Developer
+              Northeastern University, Graduated May 2024
             </h2>
             <h2 className="text-slate-400 sm:text-4xl text-2xl">
-              Graduated May 2024
+              Pursuing Software Development, Web Development
             </h2>
           </div>
         </div>
@@ -54,9 +56,7 @@ export default function Home() {
           .
         </p>
       </div>
-      <div className="hidden md:inline-block">
-        {jerImg}
-      </div>
+      <div className="hidden md:inline-block">{jerImg}</div>
     </div>
   );
 }

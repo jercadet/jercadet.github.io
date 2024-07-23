@@ -1,23 +1,23 @@
 import { List, ListItem } from "@mui/material";
-import React, { useEffect, useState } from "react";
-import { getDocTitle } from "../../utils/functions";
+import React from "react";
+import { sitePages } from "../../Database";
+import { useSelector } from "react-redux";
+import { PageState } from "../../store";
 
+// Type for page containing the link and title of the page
 type pageType = {
   link: string;
   title: string;
 };
 
+// Subcomponent for the header that builds the links to the other pages
 export default function NavPages({ alignment }: any) {
-  const pages: pageType[] = [
-    { link: "/", title: "Home" },
-    { link: "/experience", title: "Experience" },
-    { link: "/contact", title: "Contact" },
-  ];
-  const [active, setActive] = useState(getDocTitle());
+  // List of pages with their links and title
+  const pages: pageType[] = sitePages;
 
-  useEffect(() => {
-    setActive(getDocTitle());
-  }, []);
+  const active = useSelector(
+    (state: PageState) => state.pageReducer.title
+  );
 
   return (
     <div>

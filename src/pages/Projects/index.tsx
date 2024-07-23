@@ -3,17 +3,17 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Accordion from "@mui/material/Accordion";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary";
-import { setActivePage } from "../reducer";
 import { useDispatch } from "react-redux";
+import { setActivePage } from "../reducer";
 
-// Pages containing my work experiences and any other experiences
-export default function Experience() {
+// Page containing my personal projects
+export default function Projects() {
   const titleStyle = "sm:text-5xl text-4xl text-left text-slate-300 mb-4";
   const expNameStyle = "sm:text-4xl text-3xl text-left text-slate-400 mb-2";
   const text_slate_300 = "rgba(203, 213, 225, 0.2);";
   const text_slate_400 = "rgb(148 163 184)";
   const dispatch = useDispatch();
-  dispatch(setActivePage("Experience"));
+  dispatch(setActivePage("Projects"));
 
   const [expanded, setExpanded] = React.useState<String>("");
 
@@ -25,7 +25,7 @@ export default function Experience() {
   return (
     <div>
       <div className="mb-5">
-        <h1 className={titleStyle}>Professional Experience</h1>
+        <h1 className={titleStyle}>Projects</h1>
         <Accordion
           expanded={expanded === "panel1"}
           onChange={handleChange("panel1")}
