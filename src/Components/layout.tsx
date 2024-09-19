@@ -5,6 +5,7 @@ interface Props {
   children: any;
 }
 
+// Component for the layout of every page
 const Layout: React.FC<Props> = ({ children }) => {
   return (
     <div className="flex flex-col min-h-screen mx-8 mb-4">

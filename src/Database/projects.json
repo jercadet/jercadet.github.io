@@ -1,0 +1,18 @@
+[
+    {
+        "id": "music-character",
+        "name": "Music Character"
+    },
+    {
+        "id": "education",
+        "name": "Education Web Application"
+    },
+    {
+        "id": "spreadsheet",
+        "name": "Spreadsheet Web Application"
+    },
+    {
+        "id": "image-editor",
+        "name": "Image Editor"
+    }
+]

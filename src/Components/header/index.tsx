@@ -1,30 +1,31 @@
 import { Button, Drawer } from "@mui/material";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import DensityMediumIcon from "@mui/icons-material/DensityMedium";
 import NavPages from "./navPages";
-import { getDocTitle } from "../../utils/functions";
+import { useSelector } from "react-redux";
+import { JcadetState } from "../../store";
 
+// Main file of the header (banner with the links to the other pages on the top of each page)
 export default function Header() {
   const [open, setOpen] = useState(false);
-  const [pageTitle, setPageTitle] = useState(getDocTitle());
+
+  const pageTitle = useSelector((state: JcadetState) => state.pageReducer.title);
 
   const toggleDrawer = (newOpen: boolean) => () => {
     setOpen(newOpen);
   };
-
-  useEffect(() => {
-    setPageTitle(getDocTitle());
-  }, []);
 
   return (
     <div className="w-auto">
       <div className="fixed bg-soot/50 backdrop-blur-md top-0 left-0 right-0 py-3 border-b-2 border-slate-700 z-10">
         <header className="sm:visible ">
           <nav className="hidden sm:inline-block">
-            <NavPages alignment={"sm:flex justify-center sm:space-x-48 text-xl"} />
+            <NavPages
+              alignment={"sm:flex justify-center sm:space-x-48 text-xl"}
+            />
           </nav>
-            <nav>
-          <div className="sm:hidden">
+          <nav>
+            <div className="sm:hidden">
               <div className="flex justify-between ml-4">
                 <Button onClick={toggleDrawer(true)}>
                   <DensityMediumIcon
@@ -57,8 +58,8 @@ export default function Header() {
               >
                 <NavPages alignment={""} />
               </Drawer>
-          </div>
-            </nav>
+            </div>
+          </nav>
         </header>
       </div>
     </div>
