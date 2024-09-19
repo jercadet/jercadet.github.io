@@ -22,11 +22,11 @@ export default function Experience() {
         {experiences.map((exp, idx) => (
           <AccordionItem
             key={idx}
-            panel={exp.panel}
-            company={exp.company}
-            role={exp.role}
+            panel={exp.id}
+            title={exp.company}
+            subtitle={exp.role}
             // Experiences in experiences.tsx need to be in the same order as experiences.json
-            body={bodies[idx]}
+            body={bodies.find((xp) => xp.id === exp.id)?.body}
           />
         ))}
       </div>

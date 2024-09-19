@@ -1,20 +1,17 @@
 [
     {
-        "panel": "optum",
+        "id": "optum",
         "company": "Optum",
-        "role": "Technology Development Intern",
-        "body": "optum"
+        "role": "Technology Development Intern"
     },
     {
-        "panel": "hydrow",
+        "id": "hydrow",
         "company": "Hydrow",
-        "role": "Software Engineer Co-op",
-        "body": "hydrow"
+        "role": "Software Engineer Co-op"
     },
     {
-        "panel": "ra",
+        "id": "ra",
         "company": "Resident Assistant (RA)",
-        "role": "",
-        "body": "ra"
+        "role": ""
     }
 ]

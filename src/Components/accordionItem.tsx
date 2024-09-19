@@ -4,18 +4,21 @@ import React from "react";
 import { setActiveItem } from "../pages/Experience/reducer";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { JcadetState } from "../store";
+import { ImageLinks } from "../utils/types";
 
 // A component for an item in an accordian list
 export default function AccordionItem({
   panel,
-  company,
-  role,
+  title,
+  subtitle,
   body,
+  images,
 }: {
-  panel: String;
-  company: String;
-  role: String;
+  panel: string;
+  title: string;
+  subtitle: string;
   body: any;
+  images?: ImageLinks[];
 }) {
   const expNameStyle = "sm:text-4xl text-3xl text-left text-slate-300 mb-2";
   const text_slate_300 = "rgba(203, 213, 225, 0.2)";
@@ -26,10 +29,8 @@ export default function AccordionItem({
     (state: JcadetState) => state.experienceReducer.expanded
   );
 
-  console.log(expanded)
-
   const handleChange =
-    (panel: String) => (e: React.SyntheticEvent, newExpanded: boolean) => {
+    (panel: string) => (e: React.SyntheticEvent, newExpanded: boolean) => {
       dispatch(setActiveItem(newExpanded ? panel : ""));
     };
 
@@ -50,12 +51,19 @@ export default function AccordionItem({
           aria-controls="panel1-content"
           id="panel1-header"
         >
-          <h2 className={`${expNameStyle} md:block pr-3`}>{company}</h2>
+          <h2 className={`${expNameStyle} md:block pr-3`}>{title}</h2>
           <h2 className={`${expNameStyle} italic hidden lg:block`}>
-            {role ? `- ${role}` : ""}
+            {subtitle ? `- ${subtitle}` : ""}
           </h2>
         </AccordionSummary>
-        <AccordionDetails>{body}</AccordionDetails>
+        <AccordionDetails>
+          <div>
+            {body}
+            {images?.map((image, idx) => (
+              <img key={idx.toString()} src="../media/images/musicCharacterPics/welcomeScreen.png" alt={image.alt}></img>
+            ))}
+          </div>
+        </AccordionDetails>
       </Accordion>
     </div>
   );
