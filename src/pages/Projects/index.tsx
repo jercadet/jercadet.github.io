@@ -24,7 +24,6 @@ export default function Projects() {
             subtitle={""}
             // Experiences in experiences.tsx need to be in the same order as experiences.json
             body={bodies.find((xp) => xp.id === project.id)?.body}
-            images={bodies.find((xp) => xp.id === project.id)?.images ?? []}
           />
         ))}
       </div>

@@ -4,7 +4,6 @@ import React from "react";
 import { setActiveItem } from "../pages/Experience/reducer";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { JcadetState } from "../store";
-import { ImageLinks } from "../utils/types";
 
 // A component for an item in an accordian list
 export default function AccordionItem({
@@ -12,13 +11,11 @@ export default function AccordionItem({
   title,
   subtitle,
   body,
-  images,
 }: {
   panel: string;
   title: string;
   subtitle: string;
   body: any;
-  images?: ImageLinks[];
 }) {
   const expNameStyle = "sm:text-4xl text-3xl text-left text-slate-300 mb-2";
   const text_slate_300 = "rgba(203, 213, 225, 0.2)";
@@ -56,14 +53,7 @@ export default function AccordionItem({
             {subtitle ? `- ${subtitle}` : ""}
           </h2>
         </AccordionSummary>
-        <AccordionDetails>
-          <div>
-            {body}
-            {images?.map((image, idx) => (
-              <img key={idx.toString()} src="../media/images/musicCharacterPics/welcomeScreen.png" alt={image.alt}></img>
-            ))}
-          </div>
-        </AccordionDetails>
+        <AccordionDetails>{body}</AccordionDetails>
       </Accordion>
     </div>
   );

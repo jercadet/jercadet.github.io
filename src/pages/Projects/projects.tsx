@@ -25,21 +25,7 @@ const musicCharacter: Bodies = {
       Bootstrap. I did a small overhaul on the front-end of the project to make
       the design responsive.
     </p>
-  ),
-  images: [
-    {
-      url: "../../media/images/musicCharacterPics/welcomeScreen.png",
-      alt: "Music Character Welcome Screen",
-    },
-    {
-      url: "/src/media/images/musicCharacterPics/topFive.png",
-      alt: "Page Showing User's Top 5 Songs from Spotify",
-    },
-    {
-      url: "src/media/images/musicCharacterPics/character.png",
-      alt: "Character For Chosen Song",
-    },
-  ],
+  )
 };
 
 const education = {
